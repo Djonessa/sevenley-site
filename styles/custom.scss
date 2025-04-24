@@ -1,0 +1,389 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Quintessential&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rhodium+Libre&display=swap');
+
+
+.navbar{
+  font-family: "Bona Nova SC", serif;
+}
+
+.nav-link{
+  display: inline-block;
+    position: relative;
+}
+
+/* Adds underline hover effect to navbar links */
+.nav-link::after{
+  content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:rgb(217, 186, 13);
+    transition: transform 0.25s ease-out;
+    text-underline-offset: 6px;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left; /* makes underline appear from left to right */
+}
+
+.hero{  /* homepage hero section */
+  background-image: linear-gradient(rgba(194, 190, 190, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/house1.jpg");
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;animation: fade-up 1.5s ease-out;
+  }
+
+  .hero-text { 
+    
+    h1 { 
+      font-family: "Raleway", serif;
+    }
+  
+    h2 {
+      font-family: "Quintessential", serif;
+    }
+  }
+
+
+.heading-text{ /* homepage text below hero section*/
+  background-color: #EEF2F5;
+  h2{
+    font-family: "Playfair Display SC", serif;
+    color:#1D3557;
+  }
+  p{
+    font-family: "Raleway", serif;
+  }
+
+  .legacy-btn{
+    background-color: #d8b508e1;
+    font-family: "Rhodium Libre", serif;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+   &:hover {
+    background-color:  rgb(212, 155, 8);
+    transform: scale(1)
+  }
+  
+}}
+
+.homes { /*our homes h2 heading on homepage */
+  font-family: "Playfair Display SC", serif;
+  color: #1D3557;
+}
+
+.services-heading{ /*our services h2 heading on homepage */
+  font-family: "Playfair Display SC", serif;
+  color: #1D3557;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.05);
+  filter: brightness(80%);
+}
+.styled-line{
+  border: 0;
+    border-top: 2px dotted gray; /* Line color and thickness */
+    width: 100%; /* Set the width of the line */
+    margin: 20px auto;
+}
+
+.btn.services-btn{
+  background-color: #d8b508e1; 
+  border:none;
+  font-family: "Rhodium Libre", serif;
+  transition: background-color 0.3s ease, transform 0.2s ease; 
+ &:hover {
+  background-color:  rgb(212, 155, 8) ;
+  transform: scale(1);
+}
+}
+
+.arrow{
+  margin: 4px;
+}
+
+.btn.p-btn{
+  
+    background-color: #d8b508e1; 
+    border:none;
+    font-family: "Rhodium Libre", serif;
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+   &:hover {
+    background-color:  rgb(212, 155, 8) ;
+    transform: scale(1);
+  }
+  
+}
+// services page info for each card
+.services-info{
+  p{
+    font-family: "Raleway", serif;
+  }
+}
+
+.services-pg{
+  h1{
+    font-family: "Playfair Display SC", serif;
+  }
+  h2{
+    font-family: "Quintessential", serif;
+  }
+}
+
+.services-pg{
+ h1{ 
+  color: #1D3557;}
+  h2{
+    color: #bd7423;
+  }
+  p{
+    font-family: "Raleway", serif;
+  }
+}
+.cta-services{
+  background-color: #EEF2F5;
+  h3{
+    font-family: "Playfair Display SC", serif;
+    color: #1D3557;
+  }
+  p{
+    font-family: "Raleway", serif;
+    color:rgb(212, 155, 8);
+  }
+}
+
+.portfolio-pg{
+  h1{ 
+    font-family: "Playfair Display SC", serif;
+    color: #1D3557;}
+    h2{
+      font-family: "Quintessential", serif;
+      color: #bd7423;
+    }
+    p{
+      font-family: "Raleway", serif;
+    }
+}
+
+.portfolio-item {
+  cursor: pointer;
+  position: relative;
+  h5{
+    font-family: "Raleway", serif;
+  }
+  p{
+    font-family: "Rhodium Libre", serif;
+  }
+  
+  
+}
+
+.portfolio-item .overlay {
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.portfolio-item img {
+  transition: transform 0.5s ease; /* Smooth zoom transition */
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.1); /* Zoom in by 10% */
+}
+
+.about-heading{
+  h1{
+    font-family: "Playfair Display SC", serif;
+    color: #1D3557;
+  }
+
+  h2{
+    font-family: "Quintessential", serif;
+    color: #bd7423;
+  }
+}
+
+.about-pg{
+  h3{
+    font-family: "Raleway", serif;
+  }
+}
+
+.about-hero{
+  background-image: linear-gradient(rgba(194, 190, 190, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/home4.jpg");
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  h1{
+    font-family: "Raleway", serif;
+    
+  }
+  h2{
+    font-family:  "Quintessential", serif;
+    color: gold;
+  }
+  
+}
+
+.about-heading{
+  h3{
+    font-family: "Playfair Display SC", serif;
+    color: #1D3557;
+  }
+}
+
+.about-p{
+  font-family: "Raleway", serif;
+}
+
+.contact-heading{
+  font-family: "Playfair Display SC", serif;
+    color: gold;
+}
+
+.contact-pg{
+  font-family: "Raleway", serif; 
+}
+
+.contact-section {
+  background-color: #1D3557;
+  padding: 3rem 0;
+  color: white;
+}
+
+.contact-form {
+  font-family: "Rhodium Libre", serif;
+
+  .form-control,
+  .form-select {
+    width: 100%;
+    background-color: #f8f9fa;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .form-img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .contact-btn {
+    background-color: hsla(50, 93%, 44%, 0.882);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    width: 100%;
+  }
+
+  .contact-btn:hover {
+    background-color: rgb(212, 155, 8);
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+    
+  }
+}
+
+// animations
+
+@keyframes fade-up{
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Start from below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at its normal position */
+  }
+}
+
+
+
+.contact-form {
+  animation: fade-up 0.8s ease-in-out forwards;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px); /* Start from the left side off-screen */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Move to its original position */
+  }
+}
+
+.contact-btn {
+  /* Ensure the button starts hidden */
+  opacity: 0;
+  animation: fadeInLeft 1s ease-out forwards;
+  animation-delay: 0.5s;  /* Delay before the animation starts */
+
+  /* Add smooth scaling and background transition */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.footer{
+  
+    
+    h2{
+      font-family: "Playfair Display SC", serif;
+      
+    }
+    p{
+      font-family: "Raleway", serif;
+      
+    }
+}
+
+.email{
+  font-family: "Raleway", serif;
+  font-weight: 600;
+  text-decoration: underline;
+}
+  .copy{
+    color:#ccc;
+  }
+
+@import "../node_modules/bootstrap/scss/bootstrap";
