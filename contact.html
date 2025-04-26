@@ -54,12 +54,17 @@
 <section class="contact-section">
   <div class="contact-form container py-6 my-4">
     <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thank-you.html">
-    <!-- Hidden Field for Form Name -->
+      <!-- Hidden Field for Form Name -->
       <input type="hidden" name="form-name" value="contact">
 
-      <div class="row g-4">
-        <!-- Left Side: Form Inputs -->
-        <div class="col-md-6">
+      <div class="row flex-column flex-md-row g-4">
+        <!-- Image (Moves to Top on Mobile) -->
+        <div class="col-md-6 d-flex align-items-center order-0 order-md-1 mb-4 mb-md-0">
+          <img src="assets/keys.jpg" alt="Sevenley Custom Home" class="form-img w-100">
+        </div>
+
+        <!-- Form Inputs -->
+        <div class="col-md-6 order-1 order-md-0">
           <div class="mb-3">
             <input type="text" class="form-control" name="name" placeholder="Full Name" required>
           </div>
@@ -82,7 +87,7 @@
             </select>
           </div>
 
-          <!-- Honeypot field (invisible to users, catches bots) -->
+          <!-- Honeypot field -->
           <div style="display: none;">
             <label>Leave this field empty</label>
             <input type="text" name="website">
@@ -90,23 +95,19 @@
 
           <!-- Submit Button -->
           <button type="submit" class="btn contact-btn btn-warning">Submit</button>
-        </div> <!-- End of col-md-6 for form -->
-
-        <!-- Right Side: Image -->
-        <div class="col-md-6 d-flex align-items-center">
-          <img src="assets/keys.jpg" alt="Sevenley Custom Home" class="form-img">
-        </div>
+        </div> <!-- End Form Side -->
       </div>
     </form>
   </div>
 </section>
+
 
 <footer class=" footer pt-4 pb-3" style="background-color: #EEF2F5;">
   <div class="container-fluid px-4">
     <div class="d-flex flex-column flex-md-row justify-content-between align-items-start text-center text-md-start">
       
       <!-- Left: Logo -->
-      <div class="footer-logo mb-4 mb-md-0">
+      <div class="footer-logo mb-4 mb-md-0 order-0 order-md-1">
         <img src="assets/sevenley minimal.png" alt="Sevenley Logo" width="85" height="85">
       </div>
 
